@@ -1,0 +1,28 @@
+# Ignore Terraform working directories
+.terraform/
+**/.terraform/
+
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore Terraform lock file
+.terraform.lock.hcl
+
+# Ignore large or unnecessary files
+*.exe
+*.doc
+# Ignore Terraform state files
+terraform.tfstate
+terraform.tfstate.backup
+
+
+
+# Ignore provider binaries
+terraform-provider-*
+
+# Ignore any crash logs or temp files
+crash.log
+*.tfvars.json
+*.tfvars
+

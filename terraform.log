@@ -1,0 +1,1686 @@
+2025-08-10T10:44:55.143+0530 [INFO]  Terraform version: 1.12.2
+2025-08-10T10:44:55.145+0530 [DEBUG] using github.com/hashicorp/go-tfe v1.74.1
+2025-08-10T10:44:55.145+0530 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.1-0.20250203194505-ba0759438da2
+2025-08-10T10:44:55.145+0530 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2025-08-10T10:44:55.145+0530 [DEBUG] using github.com/zclconf/go-cty v1.16.2
+2025-08-10T10:44:55.145+0530 [INFO]  Go runtime version: go1.24.2
+2025-08-10T10:44:55.145+0530 [INFO]  CLI args: []string{"C:\\terraform\\terraform.exe", "apply"}
+2025-08-10T10:44:55.155+0530 [DEBUG] Attempting to open CLI config file: C:\Users\DELL\AppData\Roaming\terraform.rc
+2025-08-10T10:44:55.156+0530 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2025-08-10T10:44:55.157+0530 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2025-08-10T10:44:55.157+0530 [DEBUG] ignoring non-existing provider search directory C:\Users\DELL\AppData\Roaming\terraform.d\plugins
+2025-08-10T10:44:55.160+0530 [DEBUG] ignoring non-existing provider search directory C:\Users\DELL\AppData\Roaming\HashiCorp\Terraform\plugins
+2025-08-10T10:44:55.160+0530 [INFO]  CLI command args: []string{"apply"}
+2025-08-10T10:44:55.281+0530 [DEBUG] checking for provisioner in "."
+2025-08-10T10:44:55.281+0530 [DEBUG] checking for provisioner in "C:\\terraform"
+2025-08-10T10:44:55.283+0530 [INFO]  backend/local: starting Apply operation
+2025-08-10T10:44:55.295+0530 [DEBUG] created provider logger: level=debug
+2025-08-10T10:44:55.295+0530 [INFO]  provider: configuring client automatic mTLS
+2025-08-10T10:44:55.328+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe args=[".terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe"]
+2025-08-10T10:44:55.338+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe pid=14852
+2025-08-10T10:44:55.338+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe
+2025-08-10T10:44:55.410+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: configuring server automatic mTLS: timestamp="2025-08-10T10:44:55.409+0530"
+2025-08-10T10:44:55.436+0530 [DEBUG] provider.terraform-provider-docker_v3.6.2.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp="2025-08-10T10:44:55.436+0530"
+2025-08-10T10:44:55.436+0530 [DEBUG] provider: using plugin: version=5
+2025-08-10T10:44:55.482+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2025-08-10T10:44:55.501+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe id=14852
+2025-08-10T10:44:55.501+0530 [DEBUG] provider: plugin exited
+2025-08-10T10:44:55.501+0530 [DEBUG] Building and walking validate graph
+2025-08-10T10:44:55.502+0530 [DEBUG] ProviderTransformer: "docker_container.nginx" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:44:55.502+0530 [DEBUG] ProviderTransformer: "docker_image.nginx" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:44:55.502+0530 [DEBUG] ReferenceTransformer: "docker_image.nginx" references: []
+2025-08-10T10:44:55.502+0530 [DEBUG] ReferenceTransformer: "docker_container.nginx" references: [docker_image.nginx]
+2025-08-10T10:44:55.502+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/kreuzwerker/docker\"]" references: []
+2025-08-10T10:44:55.502+0530 [DEBUG] Starting graph walk: walkValidate
+2025-08-10T10:44:55.504+0530 [DEBUG] created provider logger: level=debug
+2025-08-10T10:44:55.504+0530 [INFO]  provider: configuring client automatic mTLS
+2025-08-10T10:44:55.516+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe args=[".terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe"]
+2025-08-10T10:44:55.523+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe pid=2972
+2025-08-10T10:44:55.523+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe
+2025-08-10T10:44:55.587+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: configuring server automatic mTLS: timestamp="2025-08-10T10:44:55.585+0530"
+2025-08-10T10:44:55.612+0530 [DEBUG] provider: using plugin: version=5
+2025-08-10T10:44:55.612+0530 [DEBUG] provider.terraform-provider-docker_v3.6.2.exe: plugin address: network=tcp address=127.0.0.1:10000 timestamp="2025-08-10T10:44:55.612+0530"
+2025-08-10T10:44:55.655+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2025-08-10T10:44:55.670+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe id=2972
+2025-08-10T10:44:55.670+0530 [DEBUG] provider: plugin exited
+2025-08-10T10:44:55.670+0530 [INFO]  backend/local: apply calling Plan
+2025-08-10T10:44:55.671+0530 [DEBUG] Building and walking plan graph for NormalMode
+2025-08-10T10:44:55.671+0530 [DEBUG] ProviderTransformer: "docker_image.nginx (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:44:55.671+0530 [DEBUG] ProviderTransformer: "docker_container.nginx (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:44:55.672+0530 [DEBUG] ReferenceTransformer: "docker_container.nginx (expand)" references: [docker_image.nginx (expand)]
+2025-08-10T10:44:55.672+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/kreuzwerker/docker\"]" references: []
+2025-08-10T10:44:55.672+0530 [DEBUG] ReferenceTransformer: "docker_image.nginx (expand)" references: []
+2025-08-10T10:44:55.673+0530 [DEBUG] Starting graph walk: walkPlan
+2025-08-10T10:44:55.673+0530 [DEBUG] created provider logger: level=debug
+2025-08-10T10:44:55.674+0530 [INFO]  provider: configuring client automatic mTLS
+2025-08-10T10:44:55.682+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe args=[".terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe"]
+2025-08-10T10:44:55.691+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe pid=17424
+2025-08-10T10:44:55.691+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe
+2025-08-10T10:44:55.779+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: configuring server automatic mTLS: timestamp="2025-08-10T10:44:55.777+0530"
+2025-08-10T10:44:55.808+0530 [DEBUG] provider: using plugin: version=5
+2025-08-10T10:44:55.809+0530 [DEBUG] provider.terraform-provider-docker_v3.6.2.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp="2025-08-10T10:44:55.808+0530"
+2025-08-10T10:44:55.850+0530 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/kreuzwerker/docker\"]" changed the config value, but that value is unused
+2025-08-10T10:44:55.925+0530 [DEBUG] Resource instance state not found for node "docker_image.nginx", instance docker_image.nginx
+2025-08-10T10:44:55.926+0530 [DEBUG] ReferenceTransformer: "docker_image.nginx" references: []
+2025-08-10T10:44:55.926+0530 [DEBUG] refresh: docker_image.nginx: no state, so not refreshing
+2025-08-10T10:44:55.937+0530 [DEBUG] Resource instance state not found for node "docker_container.nginx", instance docker_container.nginx
+2025-08-10T10:44:55.937+0530 [DEBUG] ReferenceTransformer: "docker_container.nginx" references: []
+2025-08-10T10:44:55.938+0530 [DEBUG] refresh: docker_container.nginx: no state, so not refreshing
+2025-08-10T10:44:55.948+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:44:55 [DEBUG] suppress diff ports: old and new don't have the same length: timestamp="2025-08-10T10:44:55.948+0530"
+2025-08-10T10:44:55.949+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:44:55 [DEBUG] suppress diff ports: old and new don't have the same length: timestamp="2025-08-10T10:44:55.948+0530"
+2025-08-10T10:44:55.949+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:44:55 [DEBUG] suppress diff ports: old and new don't have the same length: timestamp="2025-08-10T10:44:55.948+0530"
+2025-08-10T10:44:55.949+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:44:55 [DEBUG] suppress diff ports: old and new don't have the same length: timestamp="2025-08-10T10:44:55.949+0530"
+2025-08-10T10:44:55.949+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:44:55 [DEBUG] suppress diff ports: old and new don't have the same length: timestamp="2025-08-10T10:44:55.949+0530"
+2025-08-10T10:44:55.953+0530 [WARN]  Provider "registry.terraform.io/kreuzwerker/docker" produced an invalid plan for docker_container.nginx, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .attach: planned value cty.False for a non-computed attribute
+      - .must_run: planned value cty.True for a non-computed attribute
+      - .logs: planned value cty.False for a non-computed attribute
+      - .wait_timeout: planned value cty.NumberIntVal(60) for a non-computed attribute
+      - .container_read_refresh_timeout_milliseconds: planned value cty.NumberIntVal(15000) for a non-computed attribute
+      - .remove_volumes: planned value cty.True for a non-computed attribute
+      - .wait: planned value cty.False for a non-computed attribute
+      - .read_only: planned value cty.False for a non-computed attribute
+      - .network_mode: planned value cty.StringVal("bridge") for a non-computed attribute
+      - .restart: planned value cty.StringVal("no") for a non-computed attribute
+      - .tty: planned value cty.False for a non-computed attribute
+      - .rm: planned value cty.False for a non-computed attribute
+      - .stdin_open: planned value cty.False for a non-computed attribute
+      - .start: planned value cty.True for a non-computed attribute
+      - .ports[0].ip: planned value cty.StringVal("0.0.0.0") for a non-computed attribute
+      - .ports[0].protocol: planned value cty.StringVal("tcp") for a non-computed attribute
+      - .healthcheck: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .labels: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2025-08-10T10:44:55.958+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2025-08-10T10:44:55.975+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe id=17424
+2025-08-10T10:44:55.975+0530 [DEBUG] provider: plugin exited
+2025-08-10T10:44:55.977+0530 [DEBUG] building apply graph to check for errors
+2025-08-10T10:44:55.977+0530 [DEBUG] Resource state not found for node "docker_image.nginx", instance docker_image.nginx
+2025-08-10T10:44:55.977+0530 [DEBUG] Resource state not found for node "docker_container.nginx", instance docker_container.nginx
+2025-08-10T10:44:55.978+0530 [DEBUG] ProviderTransformer: "docker_image.nginx" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:44:55.978+0530 [DEBUG] ProviderTransformer: "docker_container.nginx" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:44:55.978+0530 [DEBUG] ProviderTransformer: "docker_container.nginx (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:44:55.978+0530 [DEBUG] ProviderTransformer: "docker_image.nginx (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:44:55.979+0530 [DEBUG] ReferenceTransformer: "docker_container.nginx (expand)" references: [docker_image.nginx (expand) docker_image.nginx docker_image.nginx]
+2025-08-10T10:44:55.979+0530 [DEBUG] ReferenceTransformer: "docker_image.nginx (expand)" references: []
+2025-08-10T10:44:55.979+0530 [DEBUG] ReferenceTransformer: "docker_image.nginx" references: []
+2025-08-10T10:44:55.979+0530 [DEBUG] ReferenceTransformer: "docker_container.nginx" references: [docker_image.nginx (expand) docker_image.nginx docker_image.nginx]
+2025-08-10T10:44:55.979+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/kreuzwerker/docker\"]" references: []
+2025-08-10T10:44:55.986+0530 [DEBUG] command: asking for input: "\nDo you want to perform these actions?"
+2025-08-10T10:44:58.547+0530 [INFO]  backend/local: apply calling Apply
+2025-08-10T10:44:58.547+0530 [DEBUG] Building and walking apply graph for NormalMode plan
+2025-08-10T10:44:58.548+0530 [DEBUG] Resource state not found for node "docker_image.nginx", instance docker_image.nginx
+2025-08-10T10:44:58.548+0530 [DEBUG] Resource state not found for node "docker_container.nginx", instance docker_container.nginx
+2025-08-10T10:44:58.548+0530 [DEBUG] ProviderTransformer: "docker_container.nginx (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:44:58.548+0530 [DEBUG] ProviderTransformer: "docker_image.nginx" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:44:58.548+0530 [DEBUG] ProviderTransformer: "docker_container.nginx" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:44:58.548+0530 [DEBUG] ProviderTransformer: "docker_image.nginx (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:44:58.549+0530 [DEBUG] ReferenceTransformer: "docker_image.nginx (expand)" references: []
+2025-08-10T10:44:58.549+0530 [DEBUG] ReferenceTransformer: "docker_container.nginx (expand)" references: [docker_image.nginx (expand) docker_image.nginx docker_image.nginx]
+2025-08-10T10:44:58.549+0530 [DEBUG] ReferenceTransformer: "docker_image.nginx" references: []
+2025-08-10T10:44:58.549+0530 [DEBUG] ReferenceTransformer: "docker_container.nginx" references: [docker_image.nginx (expand) docker_image.nginx docker_image.nginx]
+2025-08-10T10:44:58.549+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/kreuzwerker/docker\"]" references: []
+2025-08-10T10:44:58.550+0530 [DEBUG] Starting graph walk: walkApply
+2025-08-10T10:44:58.551+0530 [DEBUG] created provider logger: level=debug
+2025-08-10T10:44:58.552+0530 [INFO]  provider: configuring client automatic mTLS
+2025-08-10T10:44:58.560+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe args=[".terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe"]
+2025-08-10T10:44:58.566+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe pid=16952
+2025-08-10T10:44:58.566+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe
+2025-08-10T10:44:58.633+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: configuring server automatic mTLS: timestamp="2025-08-10T10:44:58.631+0530"
+2025-08-10T10:44:58.654+0530 [DEBUG] provider: using plugin: version=5
+2025-08-10T10:44:58.654+0530 [DEBUG] provider.terraform-provider-docker_v3.6.2.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp="2025-08-10T10:44:58.654+0530"
+2025-08-10T10:44:58.675+0530 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/kreuzwerker/docker\"]" changed the config value, but that value is unused
+2025-08-10T10:44:58.731+0530 [INFO]  Starting apply for docker_image.nginx
+2025-08-10T10:44:58.731+0530 [DEBUG] docker_image.nginx: applying the planned Create change
+2025-08-10T10:45:25.741+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:25 [DEBUG] pulled image nginx:latest: {"status":"Pulling from library/nginx","id":"latest"}
+{"status":"Pulling fs layer","progressDetail":{},"id":"96e47e70491e"}
+{"status":"Pulling fs layer","progressDetail":{},"id":"140da4f89dcb"}
+{"status":"Pulling fs layer","progressDetail":{},"id":"4b1e45a9989f"}
+{"status":"Pulling fs layer","progressDetail":{},"id":"f30ffbee4c54"}
+{"status":"Pulling fs layer","progressDetail":{},"id":"59e22667830b"}
+{"status":"Pulling fs layer","progressDetail":{},"id":"1d9f51194194"}
+{"status":"Pulling fs layer","progressDetail":{},"id":"2ef442a3816e"}
+{"status":"Downloading","progressDetail":{"current":955,"total":955},"progress":"[==================================================\u003e]     955B/955B","id":"2ef442a3816e"}
+{"status":"Download complete","progressDetail":{"hidecounts":true},"id":"96e47e70491e"}
+{"status":"Download complete","progressDetail":{"hidecounts":true},"id":"4b1e45a9989f"}
+{"status":"Download complete","progressDetail":{"hidecounts":true},"id":"2ef442a3816e"}
+{"status":"Downloading","progressDetail":{"current":1398,"total":1398},"progress":"[==================================================\u003e]  1.398kB/1.398kB","id":"f30ffbee4c54"}
+{"status":"Download complete","progressDetail":{"hidecounts":true},"id":"f30ffbee4c54"}
+{"status":"Download complete","progressDetail":{"hidecounts":true},"id":"1d9f51194194"}
+{"status":"Downloading","progressDetail":{"current":1048576,"total":43967965},"progress":"[=\u003e                                                 ]  1.049MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":2097152,"total":43967965},"progress":"[==\u003e                                                ]  2.097MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":2097152,"total":43967965},"progress":"[==\u003e                                                ]  2.097MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":3145728,"total":43967965},"progress":"[===\u003e                                               ]  3.146MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":3145728,"total":43967965},"progress":"[===\u003e                                               ]  3.146MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":1048576,"total":28230270},"progress":"[=\u003e                                                 ]  1.049MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":1048576,"total":28230270},"progress":"[=\u003e                                                 ]  1.049MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":3145728,"total":43967965},"progress":"[===\u003e                                               ]  3.146MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":2097152,"total":28230270},"progress":"[===\u003e                                               ]  2.097MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":3145728,"total":43967965},"progress":"[===\u003e                                               ]  3.146MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":2097152,"total":28230270},"progress":"[===\u003e                                               ]  2.097MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":4194304,"total":43967965},"progress":"[====\u003e                                              ]  4.194MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":2097152,"total":28230270},"progress":"[===\u003e                                               ]  2.097MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":4194304,"total":43967965},"progress":"[====\u003e                                              ]  4.194MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":4194304,"total":43967965},"progress":"[====\u003e                                              ]  4.194MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":3145728,"total":28230270},"progress":"[=====\u003e                                             ]  3.146MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":4194304,"total":43967965},"progress":"[====\u003e                                              ]  4.194MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":3145728,"total":28230270},"progress":"[=====\u003e                                             ]  3.146MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":3145728,"total":28230270},"progress":"[=====\u003e                                             ]  3.146MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":5242880,"total":43967965},"progress":"[=====\u003e                                             ]  5.243MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":3145728,"total":28230270},"progress":"[=====\u003e                                             ]  3.146MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":5242880,"total":43967965},"progress":"[=====\u003e                                             ]  5.243MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":5242880,"total":43967965},"progress":"[=====\u003e                                             ]  5.243MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":4194304,"total":28230270},"progress":"[=======\u003e                                           ]  4.194MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":5242880,"total":43967965},"progress":"[=====\u003e                                             ]  5.243MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":4194304,"total":28230270},"progress":"[=======\u003e                                           ]  4.194MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":5242880,"total":43967965},"progress":"[=====\u003e                                             ]  5.243MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":4194304,"total":28230270},"progress":"[=======\u003e                                           ]  4.194MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":5242880,"total":28230270},"progress":"[=========\u003e                                         ]  5.243MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":6291456,"total":43967965},"progress":"[=======\u003e                                           ]  6.291MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":6291456,"total":43967965},"progress":"[=======\u003e                                           ]  6.291MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":5242880,"total":28230270},"progress":"[=========\u003e                                         ]  5.243MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":5242880,"total":28230270},"progress":"[=========\u003e                                         ]  5.243MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":6291456,"total":43967965},"progress":"[=======\u003e                                           ]  6.291MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":6090752,"total":28230270},"progress":"[==========\u003e                                        ]  6.091MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":6291456,"total":43967965},"progress":"[=======\u003e                                           ]  6.291MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":7340032,"total":43967965},"progress":"[========\u003e                                          ]   7.34MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":6291456,"total":28230270},"progress":"[===========\u003e                                       ]  6.291MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":7340032,"total":43967965},"progress":"[========\u003e                                          ]   7.34MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":6291456,"total":28230270},"progress":"[===========\u003e                                       ]  6.291MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":6291456,"total":28230270},"progress":"[===========\u003e                                       ]  6.291MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":7340032,"total":43967965},"progress":"[========\u003e                                          ]   7.34MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":7340032,"total":28230270},"progress":"[=============\u003e                                     ]   7.34MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":7340032,"total":43967965},"progress":"[========\u003e                                          ]   7.34MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":7340032,"total":43967965},"progress":"[========\u003e                                          ]   7.34MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":7340032,"total":28230270},"progress":"[=============\u003e                                     ]   7.34MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":7340032,"total":28230270},"progress":"[=============\u003e                                     ]   7.34MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":7340032,"total":43967965},"progress":"[========\u003e                                          ]   7.34MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":8388608,"total":28230270},"progress":"[==============\u003e                                    ]  8.389MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":7340032,"total":43967965},"progress":"[========\u003e                                          ]   7.34MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":8388608,"total":28230270},"progress":"[==============\u003e                                    ]  8.389MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":8388608,"total":43967965},"progress":"[=========\u003e                                         ]  8.389MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":8388608,"total":43967965},"progress":"[=========\u003e                                         ]  8.389MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":8388608,"total":28230270},"progress":"[==============\u003e                                    ]  8.389MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":8388608,"total":43967965},"progress":"[=========\u003e                                         ]  8.389MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":8388608,"total":28230270},"progress":"[==============\u003e                                    ]  8.389MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":9437184,"total":28230270},"progress":"[================\u003e                                  ]  9.437MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":8388608,"total":43967965},"progress":"[=========\u003e                                         ]  8.389MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":9437184,"total":28230270},"progress":"[================\u003e                                  ]  9.437MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":8388608,"total":43967965},"progress":"[=========\u003e                                         ]  8.389MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":9437184,"total":28230270},"progress":"[================\u003e                                  ]  9.437MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":9437184,"total":43967965},"progress":"[==========\u003e                                        ]  9.437MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":9437184,"total":43967965},"progress":"[==========\u003e                                        ]  9.437MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":10485760,"total":28230270},"progress":"[==================\u003e                                ]  10.49MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":9437184,"total":43967965},"progress":"[==========\u003e                                        ]  9.437MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":10485760,"total":28230270},"progress":"[==================\u003e                                ]  10.49MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":10485760,"total":28230270},"progress":"[==================\u003e                                ]  10.49MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":9437184,"total":43967965},"progress":"[==========\u003e                                        ]  9.437MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":11534336,"total":28230270},"progress":"[====================\u003e                              ]  11.53MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":9437184,"total":43967965},"progress":"[==========\u003e                                        ]  9.437MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":9437184,"total":43967965},"progress":"[==========\u003e                                        ]  9.437MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":11534336,"total":28230270},"progress":"[====================\u003e                              ]  11.53MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":10485760,"total":43967965},"progress":"[===========\u003e                                       ]  10.49MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":11534336,"total":28230270},"progress":"[====================\u003e                              ]  11.53MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":10485760,"total":43967965},"progress":"[===========\u003e                                       ]  10.49MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":11534336,"total":28230270},"progress":"[====================\u003e                              ]  11.53MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":10485760,"total":43967965},"progress":"[===========\u003e                                       ]  10.49MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":11534336,"total":28230270},"progress":"[====================\u003e                              ]  11.53MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":10485760,"total":43967965},"progress":"[===========\u003e                                       ]  10.49MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":12582912,"total":28230270},"progress":"[======================\u003e                            ]  12.58MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":12582912,"total":28230270},"progress":"[======================\u003e                            ]  12.58MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":10485760,"total":43967965},"progress":"[===========\u003e                                       ]  10.49MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":13631488,"total":28230270},"progress":"[========================\u003e                          ]  13.63MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":10485760,"total":43967965},"progress":"[===========\u003e                                       ]  10.49MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":11534336,"total":43967965},"progress":"[=============\u003e                                     ]  11.53MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":13631488,"total":28230270},"progress":"[========================\u003e                          ]  13.63MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":13631488,"total":28230270},"progress":"[========================\u003e                          ]  13.63MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":11534336,"total":43967965},"progress":"[=============\u003e                                     ]  11.53MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":14680064,"total":28230270},"progress":"[==========================\u003e                        ]  14.68MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":11534336,"total":43967965},"progress":"[=============\u003e                                     ]  11.53MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":11534336,"total":43967965},"progress":"[=============\u003e                                     ]  11.53MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":14680064,"total":28230270},"progress":"[==========================\u003e                        ]  14.68MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":14680064,"total":28230270},"progress":"[==========================\u003e                        ]  14.68MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":11534336,"total":43967965},"progress":"[=============\u003e                                     ]  11.53MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":11534336,"total":43967965},"progress":"[=============\u003e                                     ]  11.53MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":14680064,"total":28230270},"progress":"[==========================\u003e                        ]  14.68MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":15728640,"total":28230270},"progress":"[===========================\u003e                       ]  15.73MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":12582912,"total":43967965},"progress":"[==============\u003e                                    ]  12.58MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":12582912,"total":43967965},"progress":"[==============\u003e                                    ]  12.58MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":15728640,"total":28230270},"progress":"[===========================\u003e                       ]  15.73MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":15728640,"total":28230270},"progress":"[===========================\u003e                       ]  15.73MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":12582912,"total":43967965},"progress":"[==============\u003e                                    ]  12.58MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":16658432,"total":28230270},"progress":"[=============================\u003e                     ]  16.66MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":12582912,"total":43967965},"progress":"[==============\u003e                                    ]  12.58MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":12582912,"total":43967965},"progress":"[==============\u003e                                    ]  12.58MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":16777216,"total":28230270},"progress":"[=============================\u003e                     ]  16.78MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":16777216,"total":28230270},"progress":"[=============================\u003e                     ]  16.78MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":13631488,"total":43967965},"progress":"[===============\u003e                                   ]  13.63MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":16777216,"total":28230270},"progress":"[=============================\u003e                     ]  16.78MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":13631488,"total":43967965},"progress":"[===============\u003e                                   ]  13.63MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":13631488,"total":43967965},"progress":"[===============\u003e                                   ]  13.63MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":17825792,"total":28230270},"progress":"[===============================\u003e                   ]  17.83MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":13631488,"total":43967965},"progress":"[===============\u003e                                   ]  13.63MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":17825792,"total":28230270},"progress":"[===============================\u003e                   ]  17.83MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":13631488,"total":43967965},"progress":"[===============\u003e                                   ]  13.63MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":17825792,"total":28230270},"progress":"[===============================\u003e                   ]  17.83MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":14680064,"total":43967965},"progress":"[================\u003e                                  ]  14.68MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":17825792,"total":28230270},"progress":"[===============================\u003e                   ]  17.83MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":18874368,"total":28230270},"progress":"[=================================\u003e                 ]  18.87MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":14680064,"total":43967965},"progress":"[================\u003e                                  ]  14.68MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":14680064,"total":43967965},"progress":"[================\u003e                                  ]  14.68MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":18874368,"total":28230270},"progress":"[=================================\u003e                 ]  18.87MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":18874368,"total":28230270},"progress":"[=================================\u003e                 ]  18.87MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":14680064,"total":43967965},"progress":"[================\u003e                                  ]  14.68MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":14680064,"total":43967965},"progress":"[================\u003e                                  ]  14.68MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":18874368,"total":28230270},"progress":"[=================================\u003e                 ]  18.87MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":19922944,"total":28230270},"progress":"[===================================\u003e               ]  19.92MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":14680064,"total":43967965},"progress":"[================\u003e                                  ]  14.68MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":15728640,"total":43967965},"progress":"[=================\u003e                                 ]  15.73MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":19922944,"total":28230270},"progress":"[===================================\u003e               ]  19.92MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":19922944,"total":28230270},"progress":"[===================================\u003e               ]  19.92MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":15728640,"total":43967965},"progress":"[=================\u003e                                 ]  15.73MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":19922944,"total":28230270},"progress":"[===================================\u003e               ]  19.92MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":15728640,"total":43967965},"progress":"[=================\u003e                                 ]  15.73MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":15728640,"total":43967965},"progress":"[=================\u003e                                 ]  15.73MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":20971520,"total":28230270},"progress":"[=====================================\u003e             ]  20.97MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":20971520,"total":28230270},"progress":"[=====================================\u003e             ]  20.97MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":16777216,"total":43967965},"progress":"[===================\u003e                               ]  16.78MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":20971520,"total":28230270},"progress":"[=====================================\u003e             ]  20.97MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":16777216,"total":43967965},"progress":"[===================\u003e                               ]  16.78MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":20971520,"total":28230270},"progress":"[=====================================\u003e             ]  20.97MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":16777216,"total":43967965},"progress":"[===================\u003e                               ]  16.78MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":22020096,"total":28230270},"progress":"[=======================================\u003e           ]  22.02MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":16777216,"total":43967965},"progress":"[===================\u003e                               ]  16.78MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":22020096,"total":28230270},"progress":"[=======================================\u003e           ]  22.02MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":16777216,"total":43967965},"progress":"[===================\u003e                               ]  16.78MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":22020096,"total":28230270},"progress":"[=======================================\u003e           ]  22.02MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":17825792,"total":43967965},"progress":"[====================\u003e                              ]  17.83MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":22020096,"total":28230270},"progress":"[=======================================\u003e           ]  22.02MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":17825792,"total":43967965},"progress":"[====================\u003e                              ]  17.83MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":23068672,"total":28230270},"progress":"[========================================\u003e          ]  23.07MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":17825792,"total":43967965},"progress":"[====================\u003e                              ]  17.83MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":23068672,"total":28230270},"progress":"[========================================\u003e          ]  23.07MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":18452480,"total":43967965},"progress":"[====================\u003e                              ]  18.45MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":23068672,"total":28230270},"progress":"[========================================\u003e          ]  23.07MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":18874368,"total":43967965},"progress":"[=====================\u003e                             ]  18.87MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":18874368,"total":43967965},"progress":"[=====================\u003e                             ]  18.87MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":23068672,"total":28230270},"progress":"[========================================\u003e          ]  23.07MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":23068672,"total":28230270},"progress":"[========================================\u003e          ]  23.07MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":18874368,"total":43967965},"progress":"[=====================\u003e                             ]  18.87MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":24117248,"total":28230270},"progress":"[==========================================\u003e        ]  24.12MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":18874368,"total":43967965},"progress":"[=====================\u003e                             ]  18.87MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":19922944,"total":43967965},"progress":"[======================\u003e                            ]  19.92MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":24117248,"total":28230270},"progress":"[==========================================\u003e        ]  24.12MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":19922944,"total":43967965},"progress":"[======================\u003e                            ]  19.92MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":24117248,"total":28230270},"progress":"[==========================================\u003e        ]  24.12MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":24117248,"total":28230270},"progress":"[==========================================\u003e        ]  24.12MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":19922944,"total":43967965},"progress":"[======================\u003e                            ]  19.92MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":25165824,"total":28230270},"progress":"[============================================\u003e      ]  25.17MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":19922944,"total":43967965},"progress":"[======================\u003e                            ]  19.92MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":25165824,"total":28230270},"progress":"[============================================\u003e      ]  25.17MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":20459520,"total":43967965},"progress":"[=======================\u003e                           ]  20.46MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":20971520,"total":43967965},"progress":"[=======================\u003e                           ]  20.97MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":25165824,"total":28230270},"progress":"[============================================\u003e      ]  25.17MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":20971520,"total":43967965},"progress":"[=======================\u003e                           ]  20.97MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":25165824,"total":28230270},"progress":"[============================================\u003e      ]  25.17MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":20971520,"total":43967965},"progress":"[=======================\u003e                           ]  20.97MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":26214400,"total":28230270},"progress":"[==============================================\u003e    ]  26.21MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":26214400,"total":28230270},"progress":"[==============================================\u003e    ]  26.21MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":22020096,"total":43967965},"progress":"[=========================\u003e                         ]  22.02MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":26214400,"total":28230270},"progress":"[==============================================\u003e    ]  26.21MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":22020096,"total":43967965},"progress":"[=========================\u003e                         ]  22.02MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":26214400,"total":28230270},"progress":"[==============================================\u003e    ]  26.21MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":22020096,"total":43967965},"progress":"[=========================\u003e                         ]  22.02MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":26214400,"total":28230270},"progress":"[==============================================\u003e    ]  26.21MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":22020096,"total":43967965},"progress":"[=========================\u003e                         ]  22.02MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":22917120,"total":43967965},"progress":"[==========================\u003e                        ]  22.92MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":27262976,"total":28230270},"progress":"[================================================\u003e  ]  27.26MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":27262976,"total":28230270},"progress":"[================================================\u003e  ]  27.26MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":23068672,"total":43967965},"progress":"[==========================\u003e                        ]  23.07MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":27262976,"total":28230270},"progress":"[================================================\u003e  ]  27.26MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":23068672,"total":43967965},"progress":"[==========================\u003e                        ]  23.07MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":23068672,"total":43967965},"progress":"[==========================\u003e                        ]  23.07MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":27262976,"total":28230270},"progress":"[================================================\u003e  ]  27.26MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":28230270,"total":28230270},"progress":"[==================================================\u003e]  28.23MB/28.23MB","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":24117248,"total":43967965},"progress":"[===========================\u003e                       ]  24.12MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Downloading","progressDetail":{"current":24117248,"total":43967965},"progress":"[===========================\u003e                       ]  24.12MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Download complete","progressDetail":{"hidecounts":true},"id":"59e22667830b"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":24117248,"total":43967965},"progress":"[===========================\u003e                       ]  24.12MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":24117248,"total":43967965},"progress":"[===========================\u003e                       ]  24.12MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":25165824,"total":43967965},"progress":"[============================\u003e                      ]  25.17MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":25165824,"total":43967965},"progress":"[============================\u003e                      ]  25.17MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":25165824,"total":43967965},"progress":"[============================\u003e                      ]  25.17MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":26214400,"total":43967965},"progress":"[=============================\u003e                     ]  26.21MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":26214400,"total":43967965},"progress":"[=============================\u003e                     ]  26.21MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":27262976,"total":43967965},"progress":"[===============================\u003e                   ]  27.26MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":27262976,"total":43967965},"progress":"[===============================\u003e                   ]  27.26MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":27262976,"total":43967965},"progress":"[===============================\u003e                   ]  27.26MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":28311552,"total":43967965},"progress":"[================================\u003e                  ]  28.31MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":28311552,"total":43967965},"progress":"[================================\u003e                  ]  28.31MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":29360128,"total":43967965},"progress":"[=================================\u003e                 ]  29.36MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":29360128,"total":43967965},"progress":"[=================================\u003e                 ]  29.36MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":29360128,"total":43967965},"progress":"[=================================\u003e                 ]  29.36MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":29360128,"total":43967965},"progress":"[=================================\u003e                 ]  29.36MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":30408704,"total":43967965},"progress":"[==================================\u003e                ]  30.41MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":30408704,"total":43967965},"progress":"[==================================\u003e                ]  30.41MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":31457280,"total":43967965},"progress":"[===================================\u003e               ]  31.46MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":32505856,"total":43967965},"progress":"[====================================\u003e              ]  32.51MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":3,"units":"s"},"progress":"3 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":32505856,"total":43967965},"progress":"[====================================\u003e              ]  32.51MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":3,"units":"s"},"progress":"3 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":33554432,"total":43967965},"progress":"[======================================\u003e            ]  33.55MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":3,"units":"s"},"progress":"3 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":34603008,"total":43967965},"progress":"[=======================================\u003e           ]   34.6MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":3,"units":"s"},"progress":"3 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":35651584,"total":43967965},"progress":"[========================================\u003e          ]  35.65MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":3,"units":"s"},"progress":"3 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":35651584,"total":43967965},"progress":"[========================================\u003e          ]  35.65MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":3,"units":"s"},"progress":"3 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":36700160,"total":43967965},"progress":"[=========================================\u003e         ]   36.7MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":3,"units":"s"},"progress":"3 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":36700160,"total":43967965},"progress":"[=========================================\u003e         ]   36.7MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":3,"units":"s"},"progress":"3 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":36700160,"total":43967965},"progress":"[=========================================\u003e         ]   36.7MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":3,"units":"s"},"progress":"3 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":36700160,"total":43967965},"progress":"[=========================================\u003e         ]   36.7MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":3,"units":"s"},"progress":"3 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":36777984,"total":43967965},"progress":"[=========================================\u003e         ]  36.78MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":4,"units":"s"},"progress":"4 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":38797312,"total":43967965},"progress":"[============================================\u003e      ]   38.8MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":4,"units":"s"},"progress":"4 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":39845888,"total":43967965},"progress":"[=============================================\u003e     ]  39.85MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":4,"units":"s"},"progress":"4 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":40894464,"total":43967965},"progress":"[==============================================\u003e    ]  40.89MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":4,"units":"s"},"progress":"4 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":40894464,"total":43967965},"progress":"[==============================================\u003e    ]  40.89MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":4,"units":"s"},"progress":"4 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":40894464,"total":43967965},"progress":"[==============================================\u003e    ]  40.89MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":4,"units":"s"},"progress":"4 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":41943040,"total":43967965},"progress":"[===============================================\u003e   ]  41.94MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":4,"units":"s"},"progress":"4 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":41943040,"total":43967965},"progress":"[===============================================\u003e   ]  41.94MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":4,"units":"s"},"progress":"4 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":42991616,"total":43967965},"progress":"[================================================\u003e  ]  42.99MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":4,"units":"s"},"progress":"4 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":42991616,"total":43967965},"progress":"[================================================\u003e  ]  42.99MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":4,"units":"s"},"progress":"4 s","id":"59e22667830b"}
+{"status":"Downloading","progressDetail":{"current":43967965,"total":43967965},"progress":"[==================================================\u003e]  43.97MB/43.97MB","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":4,"units":"s"},"progress":"4 s","id":"59e22667830b"}
+{"status":"Download complete","progressDetail":{"hidecounts":true},"id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":5,"units":"s"},"progress":"5 s","id":"59e22667830b"}
+{"status":"Extracting","progressDetail":{"current":5,"units":"s"},"progress":"5 s","id":"59e22667830b"}
+{"status":"Extracting","progressDetail":{"current":5,"units":"s"},"progress":"5 s","id":"59e22667830b"}
+{"status":"Extracting","progressDetail":{"current":5,"units":"s"},"progress":"5 s","id":"59e22667830b"}
+{"status":"Extracting","progressDetail":{"current":5,"units":"s"},"progress":"5 s","id":"59e22667830b"}
+{"status":"Extracting","progressDetail":{"current":5,"units":"s"},"progress":"5 s","id":"59e22667830b"}
+{"status":"Extracting","progressDetail":{"current":5,"units":"s"},"progress":"5 s","id":"59e22667830b"}
+{"status":"Extracting","progressDetail":{"current":5,"units":"s"},"progress":"5 s","id":"59e22667830b"}
+{"status":"Pull complete","progressDetail":{"hidecounts":true},"id":"59e22667830b"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":2,"units":"s"},"progress":"2 s","id":"140da4f89dcb"}
+{"status":"Extracting","progressDetail":{"current":3,"units":"s"},"progress":"3 s","id":"140da4f89dcb"}
+{"status":"Pull complete","progressDetail":{"hidecounts":true},"id":"96e47e70491e"}
+{"status":"Pull complete","progressDetail":{"hidecounts":true},"id":"140da4f89dcb"}
+{"status":"Pull complete","progressDetail":{"hidecounts":true},"id":"4b1e45a9989f"}
+{"status":"Pull complete","progressDetail":{"hidecounts":true},"id":"2ef442a3816e"}
+{"status":"Extracting","progressDetail":{"current":1,"units":"s"},"progress":"1 s","id":"f30ffbee4c54"}
+{"status":"Pull complete","progressDetail":{"hidecounts":true},"id":"1d9f51194194"}
+{"status":"Pull complete","progressDetail":{"hidecounts":true},"id":"f30ffbee4c54"}
+{"status":"Digest: sha256:84ec966e61a8c7846f509da7eb081c55c1d56817448728924a87ab32f12a72fb"}
+{"status":"Status: Downloaded newer image for nginx:latest"}: timestamp="2025-08-10T10:45:25.737+0530"
+2025-08-10T10:45:26.108+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] found local image via imageName: nginx:latest: timestamp="2025-08-10T10:45:26.107+0530"
+2025-08-10T10:45:26.453+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] found local image via imageName: nginx:latest: timestamp="2025-08-10T10:45:26.453+0530"
+2025-08-10T10:45:26.462+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2025-08-10T10:45:26.468+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] suppress diff ports: old and new don't have the same length: timestamp="2025-08-10T10:45:26.468+0530"
+2025-08-10T10:45:26.468+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] suppress diff ports: old and new don't have the same length: timestamp="2025-08-10T10:45:26.468+0530"
+2025-08-10T10:45:26.468+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] suppress diff ports: old and new don't have the same length: timestamp="2025-08-10T10:45:26.468+0530"
+2025-08-10T10:45:26.468+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] suppress diff ports: old and new don't have the same length: timestamp="2025-08-10T10:45:26.468+0530"
+2025-08-10T10:45:26.468+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] suppress diff ports: old and new don't have the same length: timestamp="2025-08-10T10:45:26.468+0530"
+2025-08-10T10:45:26.474+0530 [WARN]  Provider "registry.terraform.io/kreuzwerker/docker" produced an invalid plan for docker_container.nginx, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .tty: planned value cty.False for a non-computed attribute
+      - .rm: planned value cty.False for a non-computed attribute
+      - .stdin_open: planned value cty.False for a non-computed attribute
+      - .start: planned value cty.True for a non-computed attribute
+      - .attach: planned value cty.False for a non-computed attribute
+      - .must_run: planned value cty.True for a non-computed attribute
+      - .logs: planned value cty.False for a non-computed attribute
+      - .wait_timeout: planned value cty.NumberIntVal(60) for a non-computed attribute
+      - .container_read_refresh_timeout_milliseconds: planned value cty.NumberIntVal(15000) for a non-computed attribute
+      - .remove_volumes: planned value cty.True for a non-computed attribute
+      - .wait: planned value cty.False for a non-computed attribute
+      - .read_only: planned value cty.False for a non-computed attribute
+      - .network_mode: planned value cty.StringVal("bridge") for a non-computed attribute
+      - .restart: planned value cty.StringVal("no") for a non-computed attribute
+      - .labels: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .ports[0].ip: planned value cty.StringVal("0.0.0.0") for a non-computed attribute
+      - .ports[0].protocol: planned value cty.StringVal("tcp") for a non-computed attribute
+      - .healthcheck: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2025-08-10T10:45:26.475+0530 [INFO]  Starting apply for docker_container.nginx
+2025-08-10T10:45:26.475+0530 [DEBUG] docker_container.nginx: applying the planned Create change
+2025-08-10T10:45:26.479+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] setting computed for "command" from ComputedKeys: timestamp="2025-08-10T10:45:26.479+0530"
+2025-08-10T10:45:26.479+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] setting computed for "entrypoint" from ComputedKeys: timestamp="2025-08-10T10:45:26.479+0530"
+2025-08-10T10:45:26.479+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] setting computed for "env" from ComputedKeys: timestamp="2025-08-10T10:45:26.479+0530"
+2025-08-10T10:45:26.480+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] setting computed for "network_data" from ComputedKeys: timestamp="2025-08-10T10:45:26.480+0530"
+2025-08-10T10:45:26.480+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] setting computed for "healthcheck" from ComputedKeys: timestamp="2025-08-10T10:45:26.480+0530"
+2025-08-10T10:45:26.480+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] setting computed for "security_opts" from ComputedKeys: timestamp="2025-08-10T10:45:26.480+0530"
+2025-08-10T10:45:26.480+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] setting computed for "labels" from ComputedKeys: timestamp="2025-08-10T10:45:26.480+0530"
+2025-08-10T10:45:26.480+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] suppress diff ports: old and new don't have the same length: timestamp="2025-08-10T10:45:26.480+0530"
+2025-08-10T10:45:26.480+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] suppress diff ports: old and new don't have the same length: timestamp="2025-08-10T10:45:26.480+0530"
+2025-08-10T10:45:26.480+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] suppress diff ports: old and new don't have the same length: timestamp="2025-08-10T10:45:26.480+0530"
+2025-08-10T10:45:26.480+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] suppress diff ports: old and new don't have the same length: timestamp="2025-08-10T10:45:26.480+0530"
+2025-08-10T10:45:26.480+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] suppress diff ports: old and new don't have the same length: timestamp="2025-08-10T10:45:26.480+0530"
+2025-08-10T10:45:26.833+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:26 [DEBUG] found local image via imageName: nginx:latest: timestamp="2025-08-10T10:45:26.832+0530"
+2025-08-10T10:45:27.784+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:27 [INFO] retContainer container.CreateResponse{ID:"38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60", Warnings:[]string{}}: timestamp="2025-08-10T10:45:27.782+0530"
+2025-08-10T10:45:28.462+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:28 [INFO] Waiting for container: '38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60' to run: max '15 seconds': timestamp="2025-08-10T10:45:28.461+0530"
+2025-08-10T10:45:28.540+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:28 [DEBUG] Waiting for state to become: [running]: timestamp="2025-08-10T10:45:28.540+0530"
+2025-08-10T10:45:28.655+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:28 [DEBUG] Docker container inspect: {
+	"Id": "38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60",
+	"Created": "2025-08-10T05:15:03.945949909Z",
+	"Path": "/docker-entrypoint.sh",
+	"Args": [
+		"nginx",
+		"-g",
+		"daemon off;"
+	],
+	"State": {
+		"Status": "running",
+		"Running": true,
+		"Paused": false,
+		"Restarting": false,
+		"OOMKilled": false,
+		"Dead": false,
+		"Pid": 823,
+		"ExitCode": 0,
+		"Error": "",
+		"StartedAt": "2025-08-10T05:15:04.944435811Z",
+		"FinishedAt": "0001-01-01T00:00:00Z"
+	},
+	"Image": "sha256:84ec966e61a8c7846f509da7eb081c55c1d56817448728924a87ab32f12a72fb",
+	"ResolvConfPath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/resolv.conf",
+	"HostnamePath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/hostname",
+	"HostsPath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/hosts",
+	"LogPath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60-json.log",
+	"Name": "/tutorial-nginx",
+	"RestartCount": 0,
+	"Driver": "overlayfs",
+	"Platform": "linux",
+	"MountLabel": "",
+	"ProcessLabel": "",
+	"AppArmorProfile": "",
+	"ExecIDs": null,
+	"HostConfig": {
+		"Binds": null,
+		"ContainerIDFile": "",
+		"LogConfig": {
+			"Type": "json-file",
+			"Config": {}
+		},
+		"NetworkMode": "bridge",
+		"PortBindings": {
+			"80/tcp": [
+				{
+					"HostIp": "0.0.0.0",
+					"HostPort": "8000"
+				}
+			]
+		},
+		"RestartPolicy": {
+			"Name": "no",
+			"MaximumRetryCount": 0
+		},
+		"AutoRemove": false,
+		"VolumeDriver": "",
+		"VolumesFrom": null,
+		"ConsoleSize": [
+			0,
+			0
+		],
+		"CapAdd": null,
+		"CapDrop": null,
+		"CgroupnsMode": "private",
+		"Dns": null,
+		"DnsOptions": null,
+		"DnsSearch": null,
+		"ExtraHosts": null,
+		"GroupAdd": null,
+		"IpcMode": "private",
+		"Cgroup": "",
+		"Links": null,
+		"OomScoreAdj": 0,
+		"PidMode": "",
+		"Privileged": false,
+		"PublishAllPorts": false,
+		"ReadonlyRootfs": false,
+		"SecurityOpt": null,
+		"UTSMode": "",
+		"UsernsMode": "",
+		"ShmSize": 67108864,
+		"Runtime": "runc",
+		"Isolation": "",
+		"CpuShares": 0,
+		"Memory": 0,
+		"NanoCpus": 0,
+		"CgroupParent": "",
+		"BlkioWeight": 0,
+		"BlkioWeightDevice": null,
+		"BlkioDeviceReadBps": null,
+		"BlkioDeviceWriteBps": null,
+		"BlkioDeviceReadIOps": null,
+		"BlkioDeviceWriteIOps": null,
+		"CpuPeriod": 0,
+		"CpuQuota": 0,
+		"CpuRealtimePeriod": 0,
+		"CpuRealtimeRuntime": 0,
+		"CpusetCpus": "",
+		"CpusetMems": "",
+		"Devices": null,
+		"DeviceCgroupRules": null,
+		"DeviceRequests": null,
+		"MemoryReservation": 0,
+		"MemorySwap": 0,
+		"MemorySwappiness": null,
+		"OomKillDisable": null,
+		"PidsLimit": null,
+		"Ulimits": null,
+		"CpuCount": 0,
+		"CpuPercent": 0,
+		"IOMaximumIOps": 0,
+		"IOMaximumBandwidth": 0,
+		"MaskedPaths": [
+			"/proc/asound",
+			"/proc/acpi",
+			"/proc/interrupts",
+			"/proc/kcore",
+			"/proc/keys",
+			"/proc/latency_stats",
+			"/proc/timer_list",
+			"/proc/timer_stats",
+			"/proc/sched_debug",
+			"/proc/scsi",
+			"/sys/firmware",
+			"/sys/devices/virtual/powercap"
+		],
+		"ReadonlyPaths": [
+			"/proc/bus",
+			"/proc/fs",
+			"/proc/irq",
+			"/proc/sys",
+			"/proc/sysrq-trigger"
+		],
+		"Init": false
+	},
+	"GraphDriver": {
+		"Data": null,
+		"Name": "overlayfs"
+	},
+	"Mounts": [],
+	"Config": {
+		"Hostname": "38fb434be125",
+		"Domainname": "",
+		"User": "",
+		"AttachStdin": false,
+		"AttachStdout": false,
+		"AttachStderr": false,
+		"ExposedPorts": {
+			"80/tcp": {}
+		},
+		"Tty": false,
+		"OpenStdin": false,
+		"StdinOnce": false,
+		"Env": [
+			"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+			"NGINX_VERSION=1.29.0",
+			"NJS_VERSION=0.9.0",
+			"NJS_RELEASE=1~bookworm",
+			"PKG_RELEASE=1~bookworm",
+			"DYNPKG_RELEASE=1~bookworm"
+		],
+		"Cmd": [
+			"nginx",
+			"-g",
+			"daemon off;"
+		],
+		"Image": "nginx:latest",
+		"Volumes": null,
+		"WorkingDir": "",
+		"Entrypoint": [
+			"/docker-entrypoint.sh"
+		],
+		"OnBuild": null,
+		"Labels": {
+			"maintainer": "NGINX Docker Maintainers \u003cdocker-maint@nginx.com\u003e"
+		},
+		"StopSignal": "SIGQUIT"
+	},
+	"NetworkSettings": {
+		"Bridge": "",
+		"SandboxID": "67a957aeec05803b5b01075b7d0309595cc630ff32324cfade7bfc3ade6afa14",
+		"SandboxKey": "/var/run/docker/netns/67a957aeec05",
+		"Ports": {
+			"80/tcp": [
+				{
+					"HostIp": "0.0.0.0",
+					"HostPort": "8000"
+				}
+			]
+		},
+		"HairpinMode": false,
+		"LinkLocalIPv6Address": "",
+		"LinkLocalIPv6PrefixLen": 0,
+		"SecondaryIPAddresses": null,
+		"SecondaryIPv6Addresses": null,
+		"EndpointID": "8df47579f23f174df07f90478476a4309a4455e223613b84a21daaab81b8b2d0",
+		"Gateway": "172.17.0.1",
+		"GlobalIPv6Address": "",
+		"GlobalIPv6PrefixLen": 0,
+		"IPAddress": "172.17.0.2",
+		"IPPrefixLen": 16,
+		"IPv6Gateway": "",
+		"MacAddress": "f2:df:42:fe:d2:9b",
+		"Networks": {
+			"bridge": {
+				"IPAMConfig": null,
+				"Links": null,
+				"Aliases": null,
+				"MacAddress": "f2:df:42:fe:d2:9b",
+				"DriverOpts": null,
+				"GwPriority": 0,
+				"NetworkID": "2d2959de7fb98bf163c9187296f45122cad5b36745a86fb30829d3e0652aa6e2",
+				"EndpointID": "8df47579f23f174df07f90478476a4309a4455e223613b84a21daaab81b8b2d0",
+				"Gateway": "172.17.0.1",
+				"IPAddress": "172.17.0.2",
+				"IPPrefixLen": 16,
+				"IPv6Gateway": "",
+				"GlobalIPv6Address": "",
+				"GlobalIPv6PrefixLen": 0,
+				"DNSNames": null
+			}
+		}
+	},
+	"ImageManifestDescriptor": {
+		"mediaType": "application/vnd.oci.image.manifest.v1+json",
+		"digest": "sha256:6533ddd664582430971e93e69cf343e3bfffceadeaaa97d4379c4d7a29f21d47",
+		"size": 2292,
+		"annotations": {
+			"com.docker.official-images.bashbrew.arch": "amd64",
+			"org.opencontainers.image.base.digest": "sha256:9852c9b122fa2dce95ea33a096292ce649a12a7ff321a6a6f1a40eca4989a9fc",
+			"org.opencontainers.image.base.name": "debian:bookworm-slim",
+			"org.opencontainers.image.created": "2025-07-22T01:12:39Z",
+			"org.opencontainers.image.revision": "b2faad22d5d15d966e46922033681639b2a6d6fa",
+			"org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#b2faad22d5d15d966e46922033681639b2a6d6fa:mainline/debian",
+			"org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+			"org.opencontainers.image.version": "1.29.0"
+		},
+		"platform": {
+			"architecture": "amd64",
+			"os": "linux"
+		}
+	}
+}: timestamp="2025-08-10T10:45:28.655+0530"
+2025-08-10T10:45:28.655+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:28 [DEBUG] Container 38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60 is running: true: timestamp="2025-08-10T10:45:28.655+0530"
+2025-08-10T10:45:28.655+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:45:28 [DEBUG] Docker container inspect from stateFunc: {
+	"Id": "38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60",
+	"Created": "2025-08-10T05:15:03.945949909Z",
+	"Path": "/docker-entrypoint.sh",
+	"Args": [
+		"nginx",
+		"-g",
+		"daemon off;"
+	],
+	"State": {
+		"Status": "running",
+		"Running": true,
+		"Paused": false,
+		"Restarting": false,
+		"OOMKilled": false,
+		"Dead": false,
+		"Pid": 823,
+		"ExitCode": 0,
+		"Error": "",
+		"StartedAt": "2025-08-10T05:15:04.944435811Z",
+		"FinishedAt": "0001-01-01T00:00:00Z"
+	},
+	"Image": "sha256:84ec966e61a8c7846f509da7eb081c55c1d56817448728924a87ab32f12a72fb",
+	"ResolvConfPath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/resolv.conf",
+	"HostnamePath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/hostname",
+	"HostsPath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/hosts",
+	"LogPath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60-json.log",
+	"Name": "/tutorial-nginx",
+	"RestartCount": 0,
+	"Driver": "overlayfs",
+	"Platform": "linux",
+	"MountLabel": "",
+	"ProcessLabel": "",
+	"AppArmorProfile": "",
+	"ExecIDs": null,
+	"HostConfig": {
+		"Binds": null,
+		"ContainerIDFile": "",
+		"LogConfig": {
+			"Type": "json-file",
+			"Config": {}
+		},
+		"NetworkMode": "bridge",
+		"PortBindings": {
+			"80/tcp": [
+				{
+					"HostIp": "0.0.0.0",
+					"HostPort": "8000"
+				}
+			]
+		},
+		"RestartPolicy": {
+			"Name": "no",
+			"MaximumRetryCount": 0
+		},
+		"AutoRemove": false,
+		"VolumeDriver": "",
+		"VolumesFrom": null,
+		"ConsoleSize": [
+			0,
+			0
+		],
+		"CapAdd": null,
+		"CapDrop": null,
+		"CgroupnsMode": "private",
+		"Dns": null,
+		"DnsOptions": null,
+		"DnsSearch": null,
+		"ExtraHosts": null,
+		"GroupAdd": null,
+		"IpcMode": "private",
+		"Cgroup": "",
+		"Links": null,
+		"OomScoreAdj": 0,
+		"PidMode": "",
+		"Privileged": false,
+		"PublishAllPorts": false,
+		"ReadonlyRootfs": false,
+		"SecurityOpt": null,
+		"UTSMode": "",
+		"UsernsMode": "",
+		"ShmSize": 67108864,
+		"Runtime": "runc",
+		"Isolation": "",
+		"CpuShares": 0,
+		"Memory": 0,
+		"NanoCpus": 0,
+		"CgroupParent": "",
+		"BlkioWeight": 0,
+		"BlkioWeightDevice": null,
+		"BlkioDeviceReadBps": null,
+		"BlkioDeviceWriteBps": null,
+		"BlkioDeviceReadIOps": null,
+		"BlkioDeviceWriteIOps": null,
+		"CpuPeriod": 0,
+		"CpuQuota": 0,
+		"CpuRealtimePeriod": 0,
+		"CpuRealtimeRuntime": 0,
+		"CpusetCpus": "",
+		"CpusetMems": "",
+		"Devices": null,
+		"DeviceCgroupRules": null,
+		"DeviceRequests": null,
+		"MemoryReservation": 0,
+		"MemorySwap": 0,
+		"MemorySwappiness": null,
+		"OomKillDisable": null,
+		"PidsLimit": null,
+		"Ulimits": null,
+		"CpuCount": 0,
+		"CpuPercent": 0,
+		"IOMaximumIOps": 0,
+		"IOMaximumBandwidth": 0,
+		"MaskedPaths": [
+			"/proc/asound",
+			"/proc/acpi",
+			"/proc/interrupts",
+			"/proc/kcore",
+			"/proc/keys",
+			"/proc/latency_stats",
+			"/proc/timer_list",
+			"/proc/timer_stats",
+			"/proc/sched_debug",
+			"/proc/scsi",
+			"/sys/firmware",
+			"/sys/devices/virtual/powercap"
+		],
+		"ReadonlyPaths": [
+			"/proc/bus",
+			"/proc/fs",
+			"/proc/irq",
+			"/proc/sys",
+			"/proc/sysrq-trigger"
+		],
+		"Init": false
+	},
+	"GraphDriver": {
+		"Data": null,
+		"Name": "overlayfs"
+	},
+	"Mounts": [],
+	"Config": {
+		"Hostname": "38fb434be125",
+		"Domainname": "",
+		"User": "",
+		"AttachStdin": false,
+		"AttachStdout": false,
+		"AttachStderr": false,
+		"ExposedPorts": {
+			"80/tcp": {}
+		},
+		"Tty": false,
+		"OpenStdin": false,
+		"StdinOnce": false,
+		"Env": [
+			"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+			"NGINX_VERSION=1.29.0",
+			"NJS_VERSION=0.9.0",
+			"NJS_RELEASE=1~bookworm",
+			"PKG_RELEASE=1~bookworm",
+			"DYNPKG_RELEASE=1~bookworm"
+		],
+		"Cmd": [
+			"nginx",
+			"-g",
+			"daemon off;"
+		],
+		"Image": "nginx:latest",
+		"Volumes": null,
+		"WorkingDir": "",
+		"Entrypoint": [
+			"/docker-entrypoint.sh"
+		],
+		"OnBuild": null,
+		"Labels": {
+			"maintainer": "NGINX Docker Maintainers \u003cdocker-maint@nginx.com\u003e"
+		},
+		"StopSignal": "SIGQUIT"
+	},
+	"NetworkSettings": {
+		"Bridge": "",
+		"SandboxID": "67a957aeec05803b5b01075b7d0309595cc630ff32324cfade7bfc3ade6afa14",
+		"SandboxKey": "/var/run/docker/netns/67a957aeec05",
+		"Ports": {
+			"80/tcp": [
+				{
+					"HostIp": "0.0.0.0",
+					"HostPort": "8000"
+				}
+			]
+		},
+		"HairpinMode": false,
+		"LinkLocalIPv6Address": "",
+		"LinkLocalIPv6PrefixLen": 0,
+		"SecondaryIPAddresses": null,
+		"SecondaryIPv6Addresses": null,
+		"EndpointID": "8df47579f23f174df07f90478476a4309a4455e223613b84a21daaab81b8b2d0",
+		"Gateway": "172.17.0.1",
+		"GlobalIPv6Address": "",
+		"GlobalIPv6PrefixLen": 0,
+		"IPAddress": "172.17.0.2",
+		"IPPrefixLen": 16,
+		"IPv6Gateway": "",
+		"MacAddress": "f2:df:42:fe:d2:9b",
+		"Networks": {
+			"bridge": {
+				"IPAMConfig": null,
+				"Links": null,
+				"Aliases": null,
+				"MacAddress": "f2:df:42:fe:d2:9b",
+				"DriverOpts": null,
+				"GwPriority": 0,
+				"NetworkID": "2d2959de7fb98bf163c9187296f45122cad5b36745a86fb30829d3e0652aa6e2",
+				"EndpointID": "8df47579f23f174df07f90478476a4309a4455e223613b84a21daaab81b8b2d0",
+				"Gateway": "172.17.0.1",
+				"IPAddress": "172.17.0.2",
+				"IPPrefixLen": 16,
+				"IPv6Gateway": "",
+				"GlobalIPv6Address": "",
+				"GlobalIPv6PrefixLen": 0,
+				"DNSNames": null
+			}
+		}
+	},
+	"ImageManifestDescriptor": {
+		"mediaType": "application/vnd.oci.image.manifest.v1+json",
+		"digest": "sha256:6533ddd664582430971e93e69cf343e3bfffceadeaaa97d4379c4d7a29f21d47",
+		"size": 2292,
+		"annotations": {
+			"com.docker.official-images.bashbrew.arch": "amd64",
+			"org.opencontainers.image.base.digest": "sha256:9852c9b122fa2dce95ea33a096292ce649a12a7ff321a6a6f1a40eca4989a9fc",
+			"org.opencontainers.image.base.name": "debian:bookworm-slim",
+			"org.opencontainers.image.created": "2025-07-22T01:12:39Z",
+			"org.opencontainers.image.revision": "b2faad22d5d15d966e46922033681639b2a6d6fa",
+			"org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#b2faad22d5d15d966e46922033681639b2a6d6fa:mainline/debian",
+			"org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+			"org.opencontainers.image.version": "1.29.0"
+		},
+		"platform": {
+			"architecture": "amd64",
+			"os": "linux"
+		}
+	}
+}: timestamp="2025-08-10T10:45:28.655+0530"
+2025-08-10T10:45:28.659+0530 [WARN]  Provider "provider[\"registry.terraform.io/kreuzwerker/docker\"]" produced an unexpected new value for docker_container.nginx, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .userns_mode: was null, but now cty.StringVal("")
+      - .cpu_shares: was null, but now cty.NumberIntVal(0)
+      - .working_dir: was null, but now cty.StringVal("")
+      - .memory_swap: was null, but now cty.NumberIntVal(0)
+      - .max_retry_count: was null, but now cty.NumberIntVal(0)
+      - .publish_all_ports: was null, but now cty.False
+      - .cpu_set: was null, but now cty.StringVal("")
+      - .domainname: was null, but now cty.StringVal("")
+      - .pid_mode: was null, but now cty.StringVal("")
+      - .privileged: was null, but now cty.False
+      - .memory: was null, but now cty.NumberIntVal(0)
+      - .user: was null, but now cty.StringVal("")
+2025-08-10T10:45:28.666+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2025-08-10T10:45:28.669+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2025-08-10T10:45:28.685+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe id=16952
+2025-08-10T10:45:28.685+0530 [DEBUG] provider: plugin exited
+2025-08-10T10:47:28.505+0530 [INFO]  Terraform version: 1.12.2
+2025-08-10T10:47:28.507+0530 [DEBUG] using github.com/hashicorp/go-tfe v1.74.1
+2025-08-10T10:47:28.507+0530 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.1-0.20250203194505-ba0759438da2
+2025-08-10T10:47:28.507+0530 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2025-08-10T10:47:28.507+0530 [DEBUG] using github.com/zclconf/go-cty v1.16.2
+2025-08-10T10:47:28.507+0530 [INFO]  Go runtime version: go1.24.2
+2025-08-10T10:47:28.507+0530 [INFO]  CLI args: []string{"C:\\terraform\\terraform.exe", "destroy", "-auto-approve"}
+2025-08-10T10:47:28.514+0530 [DEBUG] Attempting to open CLI config file: C:\Users\DELL\AppData\Roaming\terraform.rc
+2025-08-10T10:47:28.514+0530 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2025-08-10T10:47:28.515+0530 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2025-08-10T10:47:28.515+0530 [DEBUG] ignoring non-existing provider search directory C:\Users\DELL\AppData\Roaming\terraform.d\plugins
+2025-08-10T10:47:28.517+0530 [DEBUG] ignoring non-existing provider search directory C:\Users\DELL\AppData\Roaming\HashiCorp\Terraform\plugins
+2025-08-10T10:47:28.517+0530 [INFO]  CLI command args: []string{"destroy", "-auto-approve"}
+2025-08-10T10:47:28.638+0530 [DEBUG] checking for provisioner in "."
+2025-08-10T10:47:28.638+0530 [DEBUG] checking for provisioner in "C:\\terraform"
+2025-08-10T10:47:28.640+0530 [INFO]  backend/local: starting Apply operation
+2025-08-10T10:47:28.652+0530 [DEBUG] created provider logger: level=debug
+2025-08-10T10:47:28.653+0530 [INFO]  provider: configuring client automatic mTLS
+2025-08-10T10:47:28.682+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe args=[".terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe"]
+2025-08-10T10:47:28.693+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe pid=15556
+2025-08-10T10:47:28.693+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe
+2025-08-10T10:47:28.757+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: configuring server automatic mTLS: timestamp="2025-08-10T10:47:28.756+0530"
+2025-08-10T10:47:28.780+0530 [DEBUG] provider: using plugin: version=5
+2025-08-10T10:47:28.780+0530 [DEBUG] provider.terraform-provider-docker_v3.6.2.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp="2025-08-10T10:47:28.780+0530"
+2025-08-10T10:47:28.819+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2025-08-10T10:47:28.832+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe id=15556
+2025-08-10T10:47:28.832+0530 [DEBUG] provider: plugin exited
+2025-08-10T10:47:28.832+0530 [DEBUG] Building and walking validate graph
+2025-08-10T10:47:28.833+0530 [DEBUG] ProviderTransformer: "docker_container.nginx" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:47:28.833+0530 [DEBUG] ProviderTransformer: "docker_image.nginx" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:47:28.833+0530 [DEBUG] ReferenceTransformer: "docker_image.nginx" references: []
+2025-08-10T10:47:28.833+0530 [DEBUG] ReferenceTransformer: "docker_container.nginx" references: [docker_image.nginx]
+2025-08-10T10:47:28.833+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/kreuzwerker/docker\"]" references: []
+2025-08-10T10:47:28.834+0530 [DEBUG] Starting graph walk: walkValidate
+2025-08-10T10:47:28.835+0530 [DEBUG] created provider logger: level=debug
+2025-08-10T10:47:28.835+0530 [INFO]  provider: configuring client automatic mTLS
+2025-08-10T10:47:28.843+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe args=[".terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe"]
+2025-08-10T10:47:28.848+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe pid=1576
+2025-08-10T10:47:28.849+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe
+2025-08-10T10:47:28.904+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: configuring server automatic mTLS: timestamp="2025-08-10T10:47:28.903+0530"
+2025-08-10T10:47:28.924+0530 [DEBUG] provider: using plugin: version=5
+2025-08-10T10:47:28.925+0530 [DEBUG] provider.terraform-provider-docker_v3.6.2.exe: plugin address: network=tcp address=127.0.0.1:10000 timestamp="2025-08-10T10:47:28.924+0530"
+2025-08-10T10:47:28.953+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2025-08-10T10:47:28.964+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe id=1576
+2025-08-10T10:47:28.965+0530 [DEBUG] provider: plugin exited
+2025-08-10T10:47:28.965+0530 [INFO]  backend/local: apply calling Plan
+2025-08-10T10:47:28.965+0530 [DEBUG] Building and walking plan graph for NormalMode
+2025-08-10T10:47:28.966+0530 [DEBUG] ProviderTransformer: "docker_image.nginx (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:47:28.966+0530 [DEBUG] ProviderTransformer: "docker_container.nginx (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:47:28.967+0530 [DEBUG] ReferenceTransformer: "docker_image.nginx (expand)" references: []
+2025-08-10T10:47:28.967+0530 [DEBUG] ReferenceTransformer: "docker_container.nginx (expand)" references: [docker_image.nginx (expand)]
+2025-08-10T10:47:28.967+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/kreuzwerker/docker\"]" references: []
+2025-08-10T10:47:28.967+0530 [DEBUG] Starting graph walk: walkPlan
+2025-08-10T10:47:28.968+0530 [DEBUG] created provider logger: level=debug
+2025-08-10T10:47:28.968+0530 [INFO]  provider: configuring client automatic mTLS
+2025-08-10T10:47:28.976+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe args=[".terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe"]
+2025-08-10T10:47:28.982+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe pid=1640
+2025-08-10T10:47:28.982+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe
+2025-08-10T10:47:29.036+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: configuring server automatic mTLS: timestamp="2025-08-10T10:47:29.035+0530"
+2025-08-10T10:47:29.062+0530 [DEBUG] provider: using plugin: version=5
+2025-08-10T10:47:29.062+0530 [DEBUG] provider.terraform-provider-docker_v3.6.2.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp="2025-08-10T10:47:29.062+0530"
+2025-08-10T10:47:29.085+0530 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/kreuzwerker/docker\"]" changed the config value, but that value is unused
+2025-08-10T10:47:29.160+0530 [DEBUG] ReferenceTransformer: "docker_image.nginx" references: []
+2025-08-10T10:47:29.628+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:47:29 [DEBUG] found local image via imageName: nginx:latest: timestamp="2025-08-10T10:47:29.628+0530"
+2025-08-10T10:47:29.637+0530 [DEBUG] ReferenceTransformer: "docker_container.nginx" references: []
+2025-08-10T10:47:29.651+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:47:29 [INFO] Waiting for container: '38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60' to run: max '15 seconds': timestamp="2025-08-10T10:47:29.651+0530"
+2025-08-10T10:47:29.732+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:47:29 [DEBUG] Waiting for state to become: [running]: timestamp="2025-08-10T10:47:29.731+0530"
+2025-08-10T10:47:29.851+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:47:29 [DEBUG] Docker container inspect: {
+	"Id": "38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60",
+	"Created": "2025-08-10T05:15:03.945949909Z",
+	"Path": "/docker-entrypoint.sh",
+	"Args": [
+		"nginx",
+		"-g",
+		"daemon off;"
+	],
+	"State": {
+		"Status": "running",
+		"Running": true,
+		"Paused": false,
+		"Restarting": false,
+		"OOMKilled": false,
+		"Dead": false,
+		"Pid": 823,
+		"ExitCode": 0,
+		"Error": "",
+		"StartedAt": "2025-08-10T05:15:04.944435811Z",
+		"FinishedAt": "0001-01-01T00:00:00Z"
+	},
+	"Image": "sha256:84ec966e61a8c7846f509da7eb081c55c1d56817448728924a87ab32f12a72fb",
+	"ResolvConfPath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/resolv.conf",
+	"HostnamePath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/hostname",
+	"HostsPath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/hosts",
+	"LogPath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60-json.log",
+	"Name": "/tutorial-nginx",
+	"RestartCount": 0,
+	"Driver": "overlayfs",
+	"Platform": "linux",
+	"MountLabel": "",
+	"ProcessLabel": "",
+	"AppArmorProfile": "",
+	"ExecIDs": null,
+	"HostConfig": {
+		"Binds": null,
+		"ContainerIDFile": "",
+		"LogConfig": {
+			"Type": "json-file",
+			"Config": {}
+		},
+		"NetworkMode": "bridge",
+		"PortBindings": {
+			"80/tcp": [
+				{
+					"HostIp": "0.0.0.0",
+					"HostPort": "8000"
+				}
+			]
+		},
+		"RestartPolicy": {
+			"Name": "no",
+			"MaximumRetryCount": 0
+		},
+		"AutoRemove": false,
+		"VolumeDriver": "",
+		"VolumesFrom": null,
+		"ConsoleSize": [
+			0,
+			0
+		],
+		"CapAdd": null,
+		"CapDrop": null,
+		"CgroupnsMode": "private",
+		"Dns": null,
+		"DnsOptions": null,
+		"DnsSearch": null,
+		"ExtraHosts": null,
+		"GroupAdd": null,
+		"IpcMode": "private",
+		"Cgroup": "",
+		"Links": null,
+		"OomScoreAdj": 0,
+		"PidMode": "",
+		"Privileged": false,
+		"PublishAllPorts": false,
+		"ReadonlyRootfs": false,
+		"SecurityOpt": null,
+		"UTSMode": "",
+		"UsernsMode": "",
+		"ShmSize": 67108864,
+		"Runtime": "runc",
+		"Isolation": "",
+		"CpuShares": 0,
+		"Memory": 0,
+		"NanoCpus": 0,
+		"CgroupParent": "",
+		"BlkioWeight": 0,
+		"BlkioWeightDevice": null,
+		"BlkioDeviceReadBps": null,
+		"BlkioDeviceWriteBps": null,
+		"BlkioDeviceReadIOps": null,
+		"BlkioDeviceWriteIOps": null,
+		"CpuPeriod": 0,
+		"CpuQuota": 0,
+		"CpuRealtimePeriod": 0,
+		"CpuRealtimeRuntime": 0,
+		"CpusetCpus": "",
+		"CpusetMems": "",
+		"Devices": null,
+		"DeviceCgroupRules": null,
+		"DeviceRequests": null,
+		"MemoryReservation": 0,
+		"MemorySwap": 0,
+		"MemorySwappiness": null,
+		"OomKillDisable": null,
+		"PidsLimit": null,
+		"Ulimits": null,
+		"CpuCount": 0,
+		"CpuPercent": 0,
+		"IOMaximumIOps": 0,
+		"IOMaximumBandwidth": 0,
+		"MaskedPaths": [
+			"/proc/asound",
+			"/proc/acpi",
+			"/proc/interrupts",
+			"/proc/kcore",
+			"/proc/keys",
+			"/proc/latency_stats",
+			"/proc/timer_list",
+			"/proc/timer_stats",
+			"/proc/sched_debug",
+			"/proc/scsi",
+			"/sys/firmware",
+			"/sys/devices/virtual/powercap"
+		],
+		"ReadonlyPaths": [
+			"/proc/bus",
+			"/proc/fs",
+			"/proc/irq",
+			"/proc/sys",
+			"/proc/sysrq-trigger"
+		],
+		"Init": false
+	},
+	"GraphDriver": {
+		"Data": null,
+		"Name": "overlayfs"
+	},
+	"Mounts": [],
+	"Config": {
+		"Hostname": "38fb434be125",
+		"Domainname": "",
+		"User": "",
+		"AttachStdin": false,
+		"AttachStdout": false,
+		"AttachStderr": false,
+		"ExposedPorts": {
+			"80/tcp": {}
+		},
+		"Tty": false,
+		"OpenStdin": false,
+		"StdinOnce": false,
+		"Env": [
+			"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+			"NGINX_VERSION=1.29.0",
+			"NJS_VERSION=0.9.0",
+			"NJS_RELEASE=1~bookworm",
+			"PKG_RELEASE=1~bookworm",
+			"DYNPKG_RELEASE=1~bookworm"
+		],
+		"Cmd": [
+			"nginx",
+			"-g",
+			"daemon off;"
+		],
+		"Image": "nginx:latest",
+		"Volumes": null,
+		"WorkingDir": "",
+		"Entrypoint": [
+			"/docker-entrypoint.sh"
+		],
+		"OnBuild": null,
+		"Labels": {
+			"maintainer": "NGINX Docker Maintainers \u003cdocker-maint@nginx.com\u003e"
+		},
+		"StopSignal": "SIGQUIT"
+	},
+	"NetworkSettings": {
+		"Bridge": "",
+		"SandboxID": "67a957aeec05803b5b01075b7d0309595cc630ff32324cfade7bfc3ade6afa14",
+		"SandboxKey": "/var/run/docker/netns/67a957aeec05",
+		"Ports": {
+			"80/tcp": [
+				{
+					"HostIp": "0.0.0.0",
+					"HostPort": "8000"
+				}
+			]
+		},
+		"HairpinMode": false,
+		"LinkLocalIPv6Address": "",
+		"LinkLocalIPv6PrefixLen": 0,
+		"SecondaryIPAddresses": null,
+		"SecondaryIPv6Addresses": null,
+		"EndpointID": "8df47579f23f174df07f90478476a4309a4455e223613b84a21daaab81b8b2d0",
+		"Gateway": "172.17.0.1",
+		"GlobalIPv6Address": "",
+		"GlobalIPv6PrefixLen": 0,
+		"IPAddress": "172.17.0.2",
+		"IPPrefixLen": 16,
+		"IPv6Gateway": "",
+		"MacAddress": "f2:df:42:fe:d2:9b",
+		"Networks": {
+			"bridge": {
+				"IPAMConfig": null,
+				"Links": null,
+				"Aliases": null,
+				"MacAddress": "f2:df:42:fe:d2:9b",
+				"DriverOpts": null,
+				"GwPriority": 0,
+				"NetworkID": "2d2959de7fb98bf163c9187296f45122cad5b36745a86fb30829d3e0652aa6e2",
+				"EndpointID": "8df47579f23f174df07f90478476a4309a4455e223613b84a21daaab81b8b2d0",
+				"Gateway": "172.17.0.1",
+				"IPAddress": "172.17.0.2",
+				"IPPrefixLen": 16,
+				"IPv6Gateway": "",
+				"GlobalIPv6Address": "",
+				"GlobalIPv6PrefixLen": 0,
+				"DNSNames": null
+			}
+		}
+	},
+	"ImageManifestDescriptor": {
+		"mediaType": "application/vnd.oci.image.manifest.v1+json",
+		"digest": "sha256:6533ddd664582430971e93e69cf343e3bfffceadeaaa97d4379c4d7a29f21d47",
+		"size": 2292,
+		"annotations": {
+			"com.docker.official-images.bashbrew.arch": "amd64",
+			"org.opencontainers.image.base.digest": "sha256:9852c9b122fa2dce95ea33a096292ce649a12a7ff321a6a6f1a40eca4989a9fc",
+			"org.opencontainers.image.base.name": "debian:bookworm-slim",
+			"org.opencontainers.image.created": "2025-07-22T01:12:39Z",
+			"org.opencontainers.image.revision": "b2faad22d5d15d966e46922033681639b2a6d6fa",
+			"org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#b2faad22d5d15d966e46922033681639b2a6d6fa:mainline/debian",
+			"org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+			"org.opencontainers.image.version": "1.29.0"
+		},
+		"platform": {
+			"architecture": "amd64",
+			"os": "linux"
+		}
+	}
+}: timestamp="2025-08-10T10:47:29.851+0530"
+2025-08-10T10:47:29.852+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:47:29 [DEBUG] Container 38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60 is running: true: timestamp="2025-08-10T10:47:29.851+0530"
+2025-08-10T10:47:29.852+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:47:29 [DEBUG] Docker container inspect from stateFunc: {
+	"Id": "38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60",
+	"Created": "2025-08-10T05:15:03.945949909Z",
+	"Path": "/docker-entrypoint.sh",
+	"Args": [
+		"nginx",
+		"-g",
+		"daemon off;"
+	],
+	"State": {
+		"Status": "running",
+		"Running": true,
+		"Paused": false,
+		"Restarting": false,
+		"OOMKilled": false,
+		"Dead": false,
+		"Pid": 823,
+		"ExitCode": 0,
+		"Error": "",
+		"StartedAt": "2025-08-10T05:15:04.944435811Z",
+		"FinishedAt": "0001-01-01T00:00:00Z"
+	},
+	"Image": "sha256:84ec966e61a8c7846f509da7eb081c55c1d56817448728924a87ab32f12a72fb",
+	"ResolvConfPath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/resolv.conf",
+	"HostnamePath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/hostname",
+	"HostsPath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/hosts",
+	"LogPath": "/var/lib/docker/containers/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60/38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60-json.log",
+	"Name": "/tutorial-nginx",
+	"RestartCount": 0,
+	"Driver": "overlayfs",
+	"Platform": "linux",
+	"MountLabel": "",
+	"ProcessLabel": "",
+	"AppArmorProfile": "",
+	"ExecIDs": null,
+	"HostConfig": {
+		"Binds": null,
+		"ContainerIDFile": "",
+		"LogConfig": {
+			"Type": "json-file",
+			"Config": {}
+		},
+		"NetworkMode": "bridge",
+		"PortBindings": {
+			"80/tcp": [
+				{
+					"HostIp": "0.0.0.0",
+					"HostPort": "8000"
+				}
+			]
+		},
+		"RestartPolicy": {
+			"Name": "no",
+			"MaximumRetryCount": 0
+		},
+		"AutoRemove": false,
+		"VolumeDriver": "",
+		"VolumesFrom": null,
+		"ConsoleSize": [
+			0,
+			0
+		],
+		"CapAdd": null,
+		"CapDrop": null,
+		"CgroupnsMode": "private",
+		"Dns": null,
+		"DnsOptions": null,
+		"DnsSearch": null,
+		"ExtraHosts": null,
+		"GroupAdd": null,
+		"IpcMode": "private",
+		"Cgroup": "",
+		"Links": null,
+		"OomScoreAdj": 0,
+		"PidMode": "",
+		"Privileged": false,
+		"PublishAllPorts": false,
+		"ReadonlyRootfs": false,
+		"SecurityOpt": null,
+		"UTSMode": "",
+		"UsernsMode": "",
+		"ShmSize": 67108864,
+		"Runtime": "runc",
+		"Isolation": "",
+		"CpuShares": 0,
+		"Memory": 0,
+		"NanoCpus": 0,
+		"CgroupParent": "",
+		"BlkioWeight": 0,
+		"BlkioWeightDevice": null,
+		"BlkioDeviceReadBps": null,
+		"BlkioDeviceWriteBps": null,
+		"BlkioDeviceReadIOps": null,
+		"BlkioDeviceWriteIOps": null,
+		"CpuPeriod": 0,
+		"CpuQuota": 0,
+		"CpuRealtimePeriod": 0,
+		"CpuRealtimeRuntime": 0,
+		"CpusetCpus": "",
+		"CpusetMems": "",
+		"Devices": null,
+		"DeviceCgroupRules": null,
+		"DeviceRequests": null,
+		"MemoryReservation": 0,
+		"MemorySwap": 0,
+		"MemorySwappiness": null,
+		"OomKillDisable": null,
+		"PidsLimit": null,
+		"Ulimits": null,
+		"CpuCount": 0,
+		"CpuPercent": 0,
+		"IOMaximumIOps": 0,
+		"IOMaximumBandwidth": 0,
+		"MaskedPaths": [
+			"/proc/asound",
+			"/proc/acpi",
+			"/proc/interrupts",
+			"/proc/kcore",
+			"/proc/keys",
+			"/proc/latency_stats",
+			"/proc/timer_list",
+			"/proc/timer_stats",
+			"/proc/sched_debug",
+			"/proc/scsi",
+			"/sys/firmware",
+			"/sys/devices/virtual/powercap"
+		],
+		"ReadonlyPaths": [
+			"/proc/bus",
+			"/proc/fs",
+			"/proc/irq",
+			"/proc/sys",
+			"/proc/sysrq-trigger"
+		],
+		"Init": false
+	},
+	"GraphDriver": {
+		"Data": null,
+		"Name": "overlayfs"
+	},
+	"Mounts": [],
+	"Config": {
+		"Hostname": "38fb434be125",
+		"Domainname": "",
+		"User": "",
+		"AttachStdin": false,
+		"AttachStdout": false,
+		"AttachStderr": false,
+		"ExposedPorts": {
+			"80/tcp": {}
+		},
+		"Tty": false,
+		"OpenStdin": false,
+		"StdinOnce": false,
+		"Env": [
+			"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+			"NGINX_VERSION=1.29.0",
+			"NJS_VERSION=0.9.0",
+			"NJS_RELEASE=1~bookworm",
+			"PKG_RELEASE=1~bookworm",
+			"DYNPKG_RELEASE=1~bookworm"
+		],
+		"Cmd": [
+			"nginx",
+			"-g",
+			"daemon off;"
+		],
+		"Image": "nginx:latest",
+		"Volumes": null,
+		"WorkingDir": "",
+		"Entrypoint": [
+			"/docker-entrypoint.sh"
+		],
+		"OnBuild": null,
+		"Labels": {
+			"maintainer": "NGINX Docker Maintainers \u003cdocker-maint@nginx.com\u003e"
+		},
+		"StopSignal": "SIGQUIT"
+	},
+	"NetworkSettings": {
+		"Bridge": "",
+		"SandboxID": "67a957aeec05803b5b01075b7d0309595cc630ff32324cfade7bfc3ade6afa14",
+		"SandboxKey": "/var/run/docker/netns/67a957aeec05",
+		"Ports": {
+			"80/tcp": [
+				{
+					"HostIp": "0.0.0.0",
+					"HostPort": "8000"
+				}
+			]
+		},
+		"HairpinMode": false,
+		"LinkLocalIPv6Address": "",
+		"LinkLocalIPv6PrefixLen": 0,
+		"SecondaryIPAddresses": null,
+		"SecondaryIPv6Addresses": null,
+		"EndpointID": "8df47579f23f174df07f90478476a4309a4455e223613b84a21daaab81b8b2d0",
+		"Gateway": "172.17.0.1",
+		"GlobalIPv6Address": "",
+		"GlobalIPv6PrefixLen": 0,
+		"IPAddress": "172.17.0.2",
+		"IPPrefixLen": 16,
+		"IPv6Gateway": "",
+		"MacAddress": "f2:df:42:fe:d2:9b",
+		"Networks": {
+			"bridge": {
+				"IPAMConfig": null,
+				"Links": null,
+				"Aliases": null,
+				"MacAddress": "f2:df:42:fe:d2:9b",
+				"DriverOpts": null,
+				"GwPriority": 0,
+				"NetworkID": "2d2959de7fb98bf163c9187296f45122cad5b36745a86fb30829d3e0652aa6e2",
+				"EndpointID": "8df47579f23f174df07f90478476a4309a4455e223613b84a21daaab81b8b2d0",
+				"Gateway": "172.17.0.1",
+				"IPAddress": "172.17.0.2",
+				"IPPrefixLen": 16,
+				"IPv6Gateway": "",
+				"GlobalIPv6Address": "",
+				"GlobalIPv6PrefixLen": 0,
+				"DNSNames": null
+			}
+		}
+	},
+	"ImageManifestDescriptor": {
+		"mediaType": "application/vnd.oci.image.manifest.v1+json",
+		"digest": "sha256:6533ddd664582430971e93e69cf343e3bfffceadeaaa97d4379c4d7a29f21d47",
+		"size": 2292,
+		"annotations": {
+			"com.docker.official-images.bashbrew.arch": "amd64",
+			"org.opencontainers.image.base.digest": "sha256:9852c9b122fa2dce95ea33a096292ce649a12a7ff321a6a6f1a40eca4989a9fc",
+			"org.opencontainers.image.base.name": "debian:bookworm-slim",
+			"org.opencontainers.image.created": "2025-07-22T01:12:39Z",
+			"org.opencontainers.image.revision": "b2faad22d5d15d966e46922033681639b2a6d6fa",
+			"org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#b2faad22d5d15d966e46922033681639b2a6d6fa:mainline/debian",
+			"org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+			"org.opencontainers.image.version": "1.29.0"
+		},
+		"platform": {
+			"architecture": "amd64",
+			"os": "linux"
+		}
+	}
+}: timestamp="2025-08-10T10:47:29.852+0530"
+2025-08-10T10:47:29.870+0530 [WARN]  Provider "registry.terraform.io/kreuzwerker/docker" produced an invalid plan for docker_container.nginx, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .pid_mode: planned value cty.StringVal("") for a non-computed attribute
+      - .restart: planned value cty.StringVal("no") for a non-computed attribute
+      - .user: planned value cty.StringVal("") for a non-computed attribute
+      - .cpu_shares: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .memory_swap: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .working_dir: planned value cty.StringVal("") for a non-computed attribute
+      - .read_only: planned value cty.False for a non-computed attribute
+      - .dns_opts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .start: planned value cty.True for a non-computed attribute
+      - .storage_opts: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .max_retry_count: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .privileged: planned value cty.False for a non-computed attribute
+      - .stdin_open: planned value cty.False for a non-computed attribute
+      - .attach: planned value cty.False for a non-computed attribute
+      - .must_run: planned value cty.True for a non-computed attribute
+      - .tmpfs: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .logs: planned value cty.False for a non-computed attribute
+      - .network_mode: planned value cty.StringVal("bridge") for a non-computed attribute
+      - .userns_mode: planned value cty.StringVal("") for a non-computed attribute
+      - .log_opts: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .dns: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .memory: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .publish_all_ports: planned value cty.False for a non-computed attribute
+      - .tty: planned value cty.False for a non-computed attribute
+      - .wait: planned value cty.False for a non-computed attribute
+      - .cpu_set: planned value cty.StringVal("") for a non-computed attribute
+      - .remove_volumes: planned value cty.True for a non-computed attribute
+      - .rm: planned value cty.False for a non-computed attribute
+      - .dns_search: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .domainname: planned value cty.StringVal("") for a non-computed attribute
+      - .wait_timeout: planned value cty.NumberIntVal(60) for a non-computed attribute
+      - .container_read_refresh_timeout_milliseconds: planned value cty.NumberIntVal(15000) for a non-computed attribute
+      - .group_add: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .sysctls: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .ports[0].ip: planned value cty.StringVal("0.0.0.0") for a non-computed attribute
+      - .ports[0].protocol: planned value cty.StringVal("tcp") for a non-computed attribute
+2025-08-10T10:47:29.873+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2025-08-10T10:47:29.893+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe id=1640
+2025-08-10T10:47:29.893+0530 [DEBUG] provider: plugin exited
+2025-08-10T10:47:29.896+0530 [DEBUG] Building and walking plan graph for DestroyMode
+2025-08-10T10:47:29.897+0530 [DEBUG] ProviderTransformer: "docker_image.nginx (destroy)" (*terraform.NodePlanDestroyableResourceInstance) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:47:29.897+0530 [DEBUG] ProviderTransformer: "docker_container.nginx (destroy)" (*terraform.NodePlanDestroyableResourceInstance) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:47:29.897+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/kreuzwerker/docker\"]" references: []
+2025-08-10T10:47:29.897+0530 [DEBUG] Starting graph walk: walkPlanDestroy
+2025-08-10T10:47:29.898+0530 [DEBUG] created provider logger: level=debug
+2025-08-10T10:47:29.899+0530 [INFO]  provider: configuring client automatic mTLS
+2025-08-10T10:47:29.911+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe args=[".terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe"]
+2025-08-10T10:47:29.919+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe pid=14676
+2025-08-10T10:47:29.919+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe
+2025-08-10T10:47:30.019+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: configuring server automatic mTLS: timestamp="2025-08-10T10:47:30.017+0530"
+2025-08-10T10:47:30.052+0530 [DEBUG] provider.terraform-provider-docker_v3.6.2.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp="2025-08-10T10:47:30.051+0530"
+2025-08-10T10:47:30.052+0530 [DEBUG] provider: using plugin: version=5
+2025-08-10T10:47:30.084+0530 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/kreuzwerker/docker\"]" changed the config value, but that value is unused
+2025-08-10T10:47:30.158+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2025-08-10T10:47:30.175+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe id=14676
+2025-08-10T10:47:30.175+0530 [DEBUG] provider: plugin exited
+2025-08-10T10:47:30.176+0530 [DEBUG] building apply graph to check for errors
+2025-08-10T10:47:30.178+0530 [DEBUG] ProviderTransformer: "docker_container.nginx (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:47:30.178+0530 [DEBUG] ProviderTransformer: "docker_container.nginx (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:47:30.178+0530 [DEBUG] ProviderTransformer: "docker_image.nginx (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:47:30.178+0530 [DEBUG] ProviderTransformer: "docker_image.nginx (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:47:30.178+0530 [DEBUG] ReferenceTransformer: "docker_image.nginx (expand)" references: []
+2025-08-10T10:47:30.178+0530 [DEBUG] ReferenceTransformer: "docker_container.nginx (expand)" references: [docker_image.nginx (expand)]
+2025-08-10T10:47:30.178+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/kreuzwerker/docker\"]" references: []
+2025-08-10T10:47:30.188+0530 [INFO]  backend/local: apply calling Apply
+2025-08-10T10:47:30.188+0530 [DEBUG] Building and walking apply graph for DestroyMode plan
+2025-08-10T10:47:30.190+0530 [DEBUG] ProviderTransformer: "docker_container.nginx (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:47:30.190+0530 [DEBUG] ProviderTransformer: "docker_container.nginx (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:47:30.190+0530 [DEBUG] ProviderTransformer: "docker_image.nginx (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:47:30.190+0530 [DEBUG] ProviderTransformer: "docker_image.nginx (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2025-08-10T10:47:30.190+0530 [DEBUG] ReferenceTransformer: "docker_image.nginx (expand)" references: []
+2025-08-10T10:47:30.190+0530 [DEBUG] ReferenceTransformer: "docker_container.nginx (expand)" references: [docker_image.nginx (expand)]
+2025-08-10T10:47:30.190+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/kreuzwerker/docker\"]" references: []
+2025-08-10T10:47:30.214+0530 [DEBUG] Starting graph walk: walkDestroy
+2025-08-10T10:47:30.215+0530 [DEBUG] created provider logger: level=debug
+2025-08-10T10:47:30.215+0530 [INFO]  provider: configuring client automatic mTLS
+2025-08-10T10:47:30.230+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe args=[".terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe"]
+2025-08-10T10:47:30.240+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe pid=5368
+2025-08-10T10:47:30.240+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe
+2025-08-10T10:47:30.314+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: configuring server automatic mTLS: timestamp="2025-08-10T10:47:30.312+0530"
+2025-08-10T10:47:30.348+0530 [DEBUG] provider.terraform-provider-docker_v3.6.2.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp="2025-08-10T10:47:30.348+0530"
+2025-08-10T10:47:30.349+0530 [DEBUG] provider: using plugin: version=5
+2025-08-10T10:47:30.382+0530 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/kreuzwerker/docker\"]" changed the config value, but that value is unused
+2025-08-10T10:47:30.450+0530 [INFO]  Starting apply for docker_container.nginx
+2025-08-10T10:47:30.450+0530 [DEBUG] docker_container.nginx: applying the planned Delete change
+2025-08-10T10:47:30.456+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:47:30 [INFO] Stopping Container '38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60' with timeout 0: timestamp="2025-08-10T10:47:30.456+0530"
+2025-08-10T10:47:31.144+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:47:31 [INFO] Removing Container '38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60': timestamp="2025-08-10T10:47:31.144+0530"
+2025-08-10T10:47:31.227+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:47:31 [INFO] Waiting for Container '38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60' with condition 'not-running': timestamp="2025-08-10T10:47:31.227+0530"
+2025-08-10T10:47:31.242+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:47:31 [INFO] Waiting for Container '38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60' errord: 'Error response from daemon: No such container: 38fb434be1253feb9d7ae9313911380209d721d3b6aab4712a21f056134f4f60': timestamp="2025-08-10T10:47:31.241+0530"
+2025-08-10T10:47:31.254+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2025-08-10T10:47:31.258+0530 [INFO]  Starting apply for docker_image.nginx
+2025-08-10T10:47:31.258+0530 [DEBUG] docker_image.nginx: applying the planned Delete change
+2025-08-10T10:47:31.727+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:47:31 [DEBUG] found local image via imageName: nginx:latest: timestamp="2025-08-10T10:47:31.727+0530"
+2025-08-10T10:47:32.361+0530 [INFO]  provider.terraform-provider-docker_v3.6.2.exe: 2025/08/10 10:47:32 [DEBUG] Deleted image items: 
+[
+	{
+		"Untagged": "nginx:latest"
+	},
+	{
+		"Deleted": "sha256:84ec966e61a8c7846f509da7eb081c55c1d56817448728924a87ab32f12a72fb"
+	}
+]: timestamp="2025-08-10T10:47:32.361+0530"
+2025-08-10T10:47:32.373+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2025-08-10T10:47:32.376+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2025-08-10T10:47:32.394+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.6.2/windows_amd64/terraform-provider-docker_v3.6.2.exe id=5368
+2025-08-10T10:47:32.394+0530 [DEBUG] provider: plugin exited
